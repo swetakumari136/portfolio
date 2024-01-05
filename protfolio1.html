@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/313c4f2ae1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>COMPUTER ENGINEERING GRADUATE</p>
+                <h1>Hi I'm <span>SWETA KUMARI</span> <br> I'm From BOKARO,JHARKHAND</h1>
+
+            </div>
+        </div>
+    </div>
+    <!------------------------about -------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="shweta.jpeg" width="200" height="400">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I consider myself as a
+                        diligent,self-driven and creative. My
+                        niche is problem solving which gives me
+                        the edge to think beyond.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Project')">Exprience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java</span><br> java basics</li>
+                            <li><span>Python</span><br>python basics</li>
+                            <li><span>DataBase</span><br>sql,dbms</li>
+                            <li><span>Web Development</span><br>html,css,javascript</li>
+                            <li><span>Data Structures</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Project">
+                        <ul>
+                            <li><span>JOB PORTEL WEBSITE</span><br>HTML, CSS, JavaScript, Bootstrap. This site allocates
+                                the right job information for suitable person.
+                            </li>
+                            <li><span>HEART DISEASE PREDICTION</span><br> Explored different algorithms, including
+                                K-Nearest Neighbors (KNN), SVM, Random Forest, and Decision Trees, Logistic Regression,
+                                Naive Bayes. </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2017-2018</span><br> Class X from DAV Public School</li>
+                            <li><span>2018-2021</span><br>Diploma from Government womens polytechnic,jsr</li>
+                            <li><span>2021-2024</span><br>Btech From Silicon Institue of Technology</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-------------------services------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> Internship </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> AWS MASTERS </h2>
+                    <p>• learned about AWS services and domains, Gained
+                        theoretical concept and hands on practical experience . •
+                        Using Bash scripts and Linux tools to automate and
+                        optimize the data handling for traffic signs.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-object-group"></i>
+                    <h2> DATA SCIENCE/ML </h2>
+                    <p>Implement different Machine learning Alogrithms</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------------CONTACT------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me :</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>swetadas1362002@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>7004933783</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="SWETAKUMARICV (1) (1)1.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="Message" name="6" placeholder="Your Message" required>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
